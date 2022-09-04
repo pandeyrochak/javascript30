@@ -1,68 +1,46 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
-@import url(https://fonts.googleapis.com/css?family=Cinzel:regular,500,600,700,800,900);
 html {
-  font-size: 10px;
-  /* background: url("./background.webp") bottom center; */
-  background: #23063ff7;
+  background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
   background-size: cover;
-  background-repeat: no-repeat;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Cinzel", sans-serif;
-  overflow-y: hidden;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-h1 {
-  color: white;
-  font-size: 5rem;
-  font-weight: 700;
-}
-
-.keys {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.3rem;
-}
-
-.key {
-  border-radius: 0.6rem;
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem 0.5rem;
-  transition: all 0.07s ease;
-  width: 10rem;
+  font-family: 'helvetica neue';
   text-align: center;
-  color: white;
-  background: #23063ff7;
-  box-shadow: 0px 0px 9px 3px rgb(0 0 0 / 21%);
+  font-size: 10px;
 }
 
-.playing {
-  /* transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600; */
-  box-shadow: none;
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
 }
 
-kbd {
-  display: block;
-  font-size: 4rem;
-  font-family: "Cinzel", monospace;
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
 }
 
-.sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #7eade9;
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
 }
