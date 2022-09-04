@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:regular,500,600,700,800,900);
 html {
   font-size: 10px;
-  background: url("./background.jpg") bottom center;
+  /* background: url("./background.webp") bottom center; */
+  background: #23063ff7;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -10,7 +12,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Cinzel", sans-serif;
   overflow-y: hidden;
   height: 100vh;
   display: flex;
@@ -29,6 +31,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1.3rem;
 }
 
 .key {
@@ -40,8 +43,8 @@ h1 {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgb(2 18 66 / 40%);
-  box-shadow: 0px 0px 9px 3px rgb(14 27 66 / 58%);
+  background: #23063ff7;
+  box-shadow: 0px 0px 9px 3px rgb(0 0 0 / 21%);
 }
 
 .playing {
@@ -54,6 +57,7 @@ h1 {
 kbd {
   display: block;
   font-size: 4rem;
+  font-family: "Cinzel", monospace;
 }
 
 .sound {
